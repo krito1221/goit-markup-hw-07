@@ -1,0 +1,37 @@
+.hero {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 6%;
+    background-color: $background-hero;
+    background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),url(../images/Image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        color: $hero-color;
+        letter-spacing: 0.06em;
+        width: 696px;
+    }
+}
+.hero__button {
+    background-color: $primary-color;
+    color: $hero-color;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: bold;
+    line-height: 1.87;
+    cursor: pointer;
+    border: $primary-color;
+    border-radius: 4px;
+    padding: 20px 10px;
+    &:hover {
+        background-color: $primary-color;
+    }
+}

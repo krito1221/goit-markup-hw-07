@@ -1,0 +1,31 @@
+.services {
+    padding: 0 0 94px 0;
+}
+.services__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 55px;
+    text-align: center;
+}
+.services__list {
+    display: flex;
+    justify-content: space-between;
+}
+.services__box {
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+.services__text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 27px 0;
+    bottom: 0;
+    font-size: 14px;
+    color: $hero-color;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+}

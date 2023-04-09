@@ -1,0 +1,73 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+}
+.nav__navigation-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 80px;
+}
+.nav__navigation{
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.14;
+      color: $secondary-color;
+      text-decoration: none;
+      margin-bottom: 30px;
+      transition: color $time $transition-timing;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+.link{
+  position: relative;
+  .nav__navigation-links--current {
+    color: $primary-color;
+    &::after {
+      content: "";
+      position: absolute;
+      width:100%;
+      height: 4px;
+      left: 0;
+      background-color: $primary-color;
+      border-radius:2px;
+      bottom: -32px;
+    }
+  }
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+}
+.contacts__link {
+  color: $phone-color;
+  text-decoration: none;
+  transition: color $time $transition-timing;
+  &:hover {
+    color: $primary-color;
+  &:hover .contacts__icon {
+    fill: $primary-color;
+    color: $primary-color;
+    }
+  }
+}
+.contacts__icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $phone-color;
+  transition: fill $time $transition-timing;
+}

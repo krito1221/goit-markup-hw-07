@@ -1,0 +1,38 @@
+.company {
+    height: 372px;
+    padding-top: 59px;
+    display: flex;
+    flex-direction: column;
+}
+.company__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    margin-bottom: 44px;
+}
+.company__icon {
+    width: 106px;
+    height: 52.83px;
+    fill: #757575;
+    transition: fill $time $transition-timing;
+}
+.company__icon-container {
+    display: flex;
+    justify-content: space-between;
+}
+.company__rectangle {
+    width: 170px;
+    height: 81px;
+    border-radius: 4px;
+    border: 1px #afb1b8 solid;
+    padding: 14.09px 32px;
+    cursor: pointer;
+    transition: border $time $transition-timing;
+    &:hover {
+        border: 1px $primary-color solid;
+        &:hover .company__icon {
+            fill: $primary-color;
+        }
+    }
+}
